@@ -17,8 +17,11 @@ def create_app():
     db.init_app(app)
 
 
+    from apps.ysx import ysx
     from apps.xufeiyu import xufeiyu
     app.register_blueprint(xufeiyu, url_prefix="/xfy")
+    app.register_blueprint(ysx, url_prefix="/ysx")
+
 
 
 
