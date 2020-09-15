@@ -4,4 +4,4 @@ ysx = Blueprint('ysx',__name__)
 
 @ysx.route('/')
 def index():
-    return render_template('/ysx/index.html')
+    return render_template('/ysx/ysx.html')

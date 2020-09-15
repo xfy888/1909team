@@ -11,6 +11,8 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SQLALCHEMY_ECHO = True
 
+
+
 def create_app():
     app=Flask(__name__)
     app.config.from_object(Config)
