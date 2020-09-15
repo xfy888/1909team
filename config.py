@@ -18,7 +18,9 @@ def create_app():
 
 
     from apps.xufeiyu import xufeiyu
+    from apps.zhouzy import zhouzy
     app.register_blueprint(xufeiyu, url_prefix="/xfy")
+    app.register_blueprint(zhouzy, url_prefix="/zzy")
 
 
 
