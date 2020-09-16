@@ -23,6 +23,8 @@ def create_app():
     from apps.zll import zll
     from apps.ysx import ysx
     from apps.wangyi import wangyi
+    from apps.zs import zs
+    app.register_blueprint(zs, url_prefix="/zs")
     app.register_blueprint(xufeiyu, url_prefix="/xfy")
     app.register_blueprint(zhouzy, url_prefix="/zzy")
     app.register_blueprint(huangyx,url_prefix='/hyx')
