@@ -20,11 +20,13 @@ def create_app():
     from apps.xufeiyu import xufeiyu
     from apps.zhouzy import zhouzy
     from apps.huangyx import huangyx
+    from apps.zll import zll
     from apps.ysx import ysx
     app.register_blueprint(xufeiyu, url_prefix="/xfy")
     app.register_blueprint(zhouzy, url_prefix="/zzy")
     app.register_blueprint(huangyx,url_prefix='/hyx')
     app.register_blueprint(ysx,url_prefix='/ysx')
+    app.register_blueprint(zll,url_prefix='/zll')
 
 
 
