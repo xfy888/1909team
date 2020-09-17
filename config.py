@@ -24,6 +24,8 @@ def create_app():
     from apps.ysx import ysx
     from apps.wangyi import wangyi
     from apps.zs import zs
+    from apps.lyyuan import lyyuan
+
     app.register_blueprint(zs, url_prefix="/zs")
     app.register_blueprint(xufeiyu, url_prefix="/xfy")
     app.register_blueprint(zhouzy, url_prefix="/zzy")
@@ -31,6 +33,7 @@ def create_app():
     app.register_blueprint(ysx,url_prefix='/ysx')
     app.register_blueprint(zll,url_prefix='/zll')
     app.register_blueprint(wangyi,url_prefix='/wangyi')
+    app.register_blueprint(lyyuan,url_prefix='/lyyuan')
 
 
 
